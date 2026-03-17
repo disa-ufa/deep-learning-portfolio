@@ -1,0 +1,12 @@
+tensorflow
+torch
+transformers
+datasets
+evaluate
+keras
+numpy
+matplotlib
+scikit-learn
+split-folders
+jupyter
+notebook
