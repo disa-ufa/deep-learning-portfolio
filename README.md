@@ -1,6 +1,6 @@
 # Deep Learning Portfolio
 
-Портфолио из трёх учебно-практических проектов по глубокому обучению, компьютерному зрению и обработке текста.
+Портфолио учебно-практических проектов по машинному обучению, глубокому обучению, компьютерному зрению, NLP и LLM/RAG.
 
 ## Содержание
 
@@ -34,6 +34,16 @@
 
 ---
 
+### 4. Нейро-помощник вайб-программиста
+RAG-нейро-сотрудник для фриланс-разработчика: анализирует заявки клиентов, формирует уточняющие вопросы, предлагает техническое решение, оценивает сроки/стоимость и готовит ответ заказчику.
+
+**Стек:** Python, OpenAI API, LangChain, ChromaDB, Gradio, Google Colab  
+**Результат:** рабочий RAG-пайплайн: Google Docs → структурированные фрагменты → ChromaDB → LLM-ответ → Gradio UI
+
+Папка проекта: [`20-neuro-employee-rag-gradio`](./20-neuro-employee-rag-gradio)
+
+---
+
 ## Ключевые навыки
 
 - подготовка, очистка и разбиение датасетов;
@@ -41,6 +51,8 @@
 - transfer learning и fine-tuning;
 - работа с TensorFlow / Keras / Keras 3 / Transformers;
 - построение reproducible pipeline в Google Colab;
+- разработка RAG-сценариев с векторной базой знаний;
+- создание интерфейсов для ML/LLM-приложений через Gradio;
 - анализ качества моделей на train / validation / test.
 
 ## Рекомендуемая структура репозитория
@@ -62,11 +74,15 @@
 │  ├─ notebook/
 │  ├─ reports/
 │  └─ images/
-└─ 19-stanford-dogs-efficientnetv2/
+├─ 19-stanford-dogs-efficientnetv2/
+│  ├─ README.md
+│  ├─ notebook/
+│  ├─ reports/
+│  └─ images/
+└─ 20-neuro-employee-rag-gradio/
    ├─ README.md
    ├─ notebook/
-   ├─ reports/
-   └─ images/
+   └─ reports/
 ```
 
 ## Что положить в репозиторий
@@ -74,16 +90,17 @@
 - `.ipynb` ноутбуки с финальными версиями решений;
 - PDF-отчёты;
 - 1–2 скриншота графиков или результатов для каждого проекта;
-- этот README и дополнительные файлы оформления.
+- README и дополнительные файлы оформления.
 
 ## Что не нужно загружать
 
 - исходные датасеты;
 - модели и веса большого размера;
+- API-ключи, токены и `.env`;
 - временные папки Colab;
 - служебные файлы `.ipynb_checkpoints`.
 
 ## Автор
 
 **Denis**  
-Python / ML / Deep Learning / Computer Vision / NLP
+Python / ML / Deep Learning / Computer Vision / NLP / LLM / RAG
