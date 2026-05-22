@@ -1,0 +1,9 @@
+openai
+gradio
+tiktoken
+requests
+chromadb
+langchain
+langchain-openai
+langchain-chroma
+langchain-text-splitters
