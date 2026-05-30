@@ -1,0 +1,7 @@
+﻿llama-cpp-python
+huggingface_hub
+datasets
+sentence-transformers
+pandas
+tqdm
+torch
