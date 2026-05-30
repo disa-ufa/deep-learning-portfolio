@@ -44,6 +44,14 @@ RAG-нейро-сотрудник для фриланс-разработчика
 
 ---
 
+### 5. Saiga Mistral 7B GGUF: генерация и оценка качества
+Запуск русскоязычной LLM Saiga Mistral 7B в квантованном формате GGUF, генерация 3 шуток и базовая оценка качества ответов на датасете ru_turbo_saiga.
+
+**Стек:** Python, Hugging Face, llama-cpp-python, GGUF, Sentence Transformers, Google Colab  
+**Результат:** модель `model-q4_K.gguf` успешно запущена на Tesla T4; получена Accuracy **80%** на 5 тестовых примерах по cosine similarity
+
+Папка проекта: [`21-saiga-mistral-gguf-evaluation`](./21-saiga-mistral-gguf-evaluation)
+
 ## Ключевые навыки
 
 - подготовка, очистка и разбиение датасетов;
@@ -53,7 +61,10 @@ RAG-нейро-сотрудник для фриланс-разработчика
 - построение reproducible pipeline в Google Colab;
 - разработка RAG-сценариев с векторной базой знаний;
 - создание интерфейсов для ML/LLM-приложений через Gradio;
-- анализ качества моделей на train / validation / test.
+- анализ качества моделей на train / validation / test;
+- запуск локальных LLM в формате GGUF;
+- работа с Hugging Face Hub и Datasets;
+- базовая оценка качества LLM через cosine similarity.
 
 ## Структура 
 
@@ -79,12 +90,13 @@ RAG-нейро-сотрудник для фриланс-разработчика
 │  ├─ notebook/
 │  ├─ reports/
 │  └─ images/
-└─ 20-neuro-employee-rag-gradio/
+├─ 20-neuro-employee-rag-gradio/
+│  ├─ README.md
+│  ├─ notebook/
+│  └─ reports/
+└─ 21-saiga-mistral-gguf-evaluation/
    ├─ README.md
    ├─ notebook/
-   └─ reports/
+   ├─ reports/
+   └─ images/
 ```
-
-
-
-
