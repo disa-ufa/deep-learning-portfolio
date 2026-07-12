@@ -52,6 +52,16 @@ RAG-нейро-сотрудник для фриланс-разработчика
 
 Папка проекта: [`21-saiga-mistral-gguf-evaluation`](./21-saiga-mistral-gguf-evaluation)
 
+---
+
+### 6. EduCompliance Copilot: безопасный RAG-ассистент для образования
+Нейро-сотрудник для образовательной организации: отвечает по PDF-базе знаний, показывает трассировку RAG, применяет постобработки, использует Small-to-Big / LlamaPacks-style retrieval и блокирует небезопасные запросы через guardrails.
+
+**Стек:** Python, Google Colab, PyMuPDF, Sentence Transformers, Transformers, LlamaIndex, LlamaPacks-style retrieval, NeMo Guardrails-style safety layer  
+**Результат:** полный RAG-контур: PDF-книга → чанки → embeddings → retrieval → postprocessing → trace → advanced retrieval → guardrails tests
+
+Папка проекта: [`22-educompliance-copilot-rag-guardrails`](./22-educompliance-copilot-rag-guardrails)
+
 ## Ключевые навыки
 
 - подготовка, очистка и разбиение датасетов;
@@ -60,6 +70,9 @@ RAG-нейро-сотрудник для фриланс-разработчика
 - работа с TensorFlow / Keras / Keras 3 / Transformers;
 - построение reproducible pipeline в Google Colab;
 - разработка RAG-сценариев с векторной базой знаний;
+- трассировка RAG: анализ retrieved chunks, final context и prompt;
+- улучшение RAG через postprocessing и Small-to-Big retrieval;
+- safety engineering: guardrails, фильтрация prompt injection, PII и out-of-domain запросов;
 - создание интерфейсов для ML/LLM-приложений через Gradio;
 - анализ качества моделей на train / validation / test;
 - запуск локальных LLM в формате GGUF;
@@ -94,9 +107,15 @@ RAG-нейро-сотрудник для фриланс-разработчика
 │  ├─ README.md
 │  ├─ notebook/
 │  └─ reports/
-└─ 21-saiga-mistral-gguf-evaluation/
+├─ 21-saiga-mistral-gguf-evaluation/
+│  ├─ README.md
+│  ├─ notebook/
+│  ├─ reports/
+│  └─ images/
+└─ 22-educompliance-copilot-rag-guardrails/
    ├─ README.md
    ├─ notebook/
+   ├─ guardrails/
    ├─ reports/
    └─ images/
 ```
